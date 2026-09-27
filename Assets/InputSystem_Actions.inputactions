@@ -90,16 +90,6 @@
                     "name": "Sprint",
                     "type": "Button",
                     "id": "641cd816-40e6-41b4-8c3d-04687c349290",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false,
-                    "priority": 0
-                },
-                {
-                    "name": "Jump1",
-                    "type": "Button",
-                    "id": "7d32ddf3-d42f-46a7-8686-7d4c1c2a8ae5",
                     "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
@@ -490,17 +480,6 @@
                     "processors": "",
                     "groups": "Keyboard&Mouse",
                     "action": "Crouch",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "c97c9510-9bc3-49e2-8ff5-e87acbdccf17",
-                    "path": "<Keyboard>/space",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Jump1",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
