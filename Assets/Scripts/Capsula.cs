@@ -19,10 +19,7 @@ public class Capsula : MonoBehaviour
     {
         characterController.Move(moveDirection * speed * Time.deltaTime);
 
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            //MovetoStartPostion();
-        }
+
         if (Input.GetKey(KeyCode.W))
         {
             //transform.Translate(new Vector3(0, 0, 1) * speed * Time.deltaTime);
