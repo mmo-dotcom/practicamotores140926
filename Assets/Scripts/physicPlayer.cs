@@ -3,10 +3,11 @@ using UnityEngine;
 public class physicPlayer : MonoBehaviour
 {
     public Rigidbody rb;
-    public Vector3 forceDirection;
+    public float speed = 5f;
+    public float jumpForce = 300f;
     void Start()
     {
-        rb.AddForce(forceDirection);
+
     }
 
     // Update is called once per frame
@@ -14,7 +15,23 @@ public class physicPlayer : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            rb.AddForce(new Vector3(0, 300, 0));
+            rb.AddForce(new Vector3(0, jumpForce, 0));
+        }
+        if (Input.GetKey(KeyCode.W))
+        {
+            rb.AddForce(new Vector3(0, 0, speed));
+        }
+        if (Input.GetKey(KeyCode.S))
+        {
+            rb.AddForce(new Vector3(0, 0, -speed));
+        }
+        if (Input.GetKey(KeyCode.A))
+        {
+            rb.AddForce(new Vector3(-speed, 0, 0));
+        }
+        if (Input.GetKey(KeyCode.D))
+        {
+            rb.AddForce(new Vector3(speed, 0, 0));
         }
     }
 }

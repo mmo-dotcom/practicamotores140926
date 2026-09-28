@@ -794,7 +794,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   rb: {fileID: 649255114}
-  forceDirection: {x: 0, y: 0, z: 0}
+  speed: 1
+  jumpForce: 300
 --- !u!1 &799339533
 GameObject:
   m_ObjectHideFlags: 0
@@ -1009,7 +1010,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!136 &879637596
 CapsuleCollider:
   m_ObjectHideFlags: 0
