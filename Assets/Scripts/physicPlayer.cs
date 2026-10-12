@@ -1,4 +1,7 @@
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
+using UnityEngine.UIElements;
 
 public class physicPlayer : MonoBehaviour
 {
@@ -6,10 +9,14 @@ public class physicPlayer : MonoBehaviour
     public float speed = 5f;
     public float jumpForce = 300f;
     public bool canJump = true;
+
+
     void Start()
     {
 
     }
+
+
 
     // Update is called once per frame
     void Update()
@@ -43,5 +50,12 @@ public class physicPlayer : MonoBehaviour
         {
             canJump = true;
         }
+        //if (collision.gameObject.CompareTag("Item"))
+        //{
+        //    Debug.Log("Collision detected with item: " + collision.gameObject.name);
+
+        //    Destroy(collision.gameObject);
+        //}
     }
+
 }
